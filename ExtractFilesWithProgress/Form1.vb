@@ -213,8 +213,7 @@ Public Class Form1
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Async Sub Form1_TheFolderEventHandler(sender As Object, e As ZipArgs) _
-        Handles Me.ZipEventHandler
+    Private Async Sub Form1_TheFolderEventHandler(sender As Object, e As ZipArgs) Handles Me.ZipEventHandler
 
         If e.Extracted Then
             _extractedCount += 1
